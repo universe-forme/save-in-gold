@@ -13,7 +13,7 @@ const navItems = [
     { name: 'About Us', path: '/about-us' },
     { name: 'Contact', path: '/contact-us' },
     { name: 'Blog', path: '/blogs' },
-    { name: 'Sign Ip', path: '/sign-up' },
+    { name: 'Sign Up', path: '/sign-up' },
     { name: 'Sign In', path: '/sign-in' },
 ];
 
