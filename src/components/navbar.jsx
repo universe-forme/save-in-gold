@@ -13,6 +13,8 @@ const navItems = [
     { name: 'About Us', path: '/about-us' },
     { name: 'Contact', path: '/contact-us' },
     { name: 'Blog', path: '/blogs' },
+    { name: 'Sign Ip', path: '/sign-up' },
+    { name: 'Sign In', path: '/sign-in' },
 ];
 
 const Navbar = () => {
@@ -59,7 +61,7 @@ const Navbar = () => {
                     </div>
                     {/* Assuming Contact Us button might navigate or open a modal. For now, a button. */}
                     <button className="btn-contact">Contact Us</button>
-                    <button className="btn-login">Log In</button>
+                    <a href={"/sign-in"} className="btn-login">Log In</a>
                 </div>
 
                 <button className="menu-toggle md:hidden" onClick={toggleMobileMenu} aria-label="Toggle mobile menu">
@@ -87,7 +89,7 @@ const Navbar = () => {
                         <div className="mobile-actions">
                             {/* Consider making these Link components if they navigate */}
                             <button className="btn-contact w-full">Contact Us</button>
-                            <button className="btn-login-mobile w-full">Log In</button>
+                            <a href={"/sign-in"} className="btn-login-mobile w-full">Log In</a>
                         </div>
                     </div>
                 </div>
