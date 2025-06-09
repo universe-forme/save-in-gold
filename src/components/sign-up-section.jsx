@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Lock, User } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 import galaxyForBigScreenImage from '../assets/galaxy.svg';
 import galaxyForSmallScreenImage from '../assets/galaxy-for-mobile.svg';
@@ -9,12 +10,12 @@ const SignUp = () => {
     const [fullName, setFullName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [agreeToTerms, setAgreeToTerms] = useState(false);
+    const [rememberMe, setRememberMe] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
         // Handle form submission
-        console.log('Form submitted:', { fullName, email, password, agreeToTerms });
+        console.log('Form submitted:', { fullName, email, password, rememberMe });
     };
 
     return (
@@ -127,22 +128,15 @@ const SignUp = () => {
                                 </div>
 
                                 <div className="flex items-center">
-                                    <input
-                                        type="checkbox"
-                                        checked={agreeToTerms}
-                                        onChange={(e) => setAgreeToTerms(e.target.checked)}
-                                        className="rounded border-gray-300 text-yellow-500 focus:ring-yellow-500"
-                                    />
-                                    <span className="ml-2 text-sm text-gray-300">
-                                        I agree to the{' '}
-                                        <button type="button" className="text-yellow-500 underline">
-                                            Terms & Conditions
-                                        </button>
-                                        {' '}and{' '}
-                                        <button type="button" className="text-yellow-500 underline">
-                                            Privacy Policy
-                                        </button>
-                                    </span>
+                                    <label className="flex items-center">
+                                        <input
+                                            type="checkbox"
+                                            checked={rememberMe}
+                                            onChange={(e) => setRememberMe(e.target.checked)}
+                                            className="rounded border-gray-300 text-yellow-500 focus:ring-yellow-500"
+                                        />
+                                        <span className="ml-2 text-gray-300">Remember me</span>
+                                    </label>
                                 </div>
 
                                 <button
@@ -154,9 +148,9 @@ const SignUp = () => {
 
                                 <p className="text-center text-gray-400">
                                     Already have an account?{' '}
-                                    <button type="button" className="text-yellow-500">
+                                    <Link to="/sign-in" className="text-yellow-500">
                                         Sign in
-                                    </button>
+                                    </Link>
                                 </p>
                             </div>
                         </div>
@@ -244,22 +238,15 @@ const SignUp = () => {
                                 </div>
 
                                 <div className="flex items-start text-sm">
-                                    <input
-                                        type="checkbox"
-                                        checked={agreeToTerms}
-                                        onChange={(e) => setAgreeToTerms(e.target.checked)}
-                                        className="rounded border-gray-300 text-yellow-500 focus:ring-yellow-500 mt-1 flex-shrink-0"
-                                    />
-                                    <span className="ml-2 text-gray-300 text-xs leading-relaxed">
-                                        I agree to the{' '}
-                                        <button type="button" className="text-yellow-500 underline">
-                                            Terms & Conditions
-                                        </button>
-                                        {' '}and{' '}
-                                        <button type="button" className="text-yellow-500 underline">
-                                            Privacy Policy
-                                        </button>
-                                    </span>
+                                    <label className="flex items-center">
+                                        <input
+                                            type="checkbox"
+                                            checked={rememberMe}
+                                            onChange={(e) => setRememberMe(e.target.checked)}
+                                            className="rounded border-gray-300 text-yellow-500 focus:ring-yellow-500"
+                                        />
+                                        <span className="ml-2 text-gray-300">Remember me</span>
+                                    </label>
                                 </div>
 
                                 <button
@@ -271,9 +258,9 @@ const SignUp = () => {
 
                                 <p className="text-center text-gray-400 text-sm">
                                     Already have an account?{' '}
-                                    <button type="button" className="text-yellow-500">
+                                    <Link to="/sign-in" className="text-yellow-500">
                                         Sign in
-                                    </button>
+                                    </Link>
                                 </p>
                             </div>
                         </div>

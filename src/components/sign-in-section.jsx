@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Mail, Lock } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 import galaxyForBigScreenImage from '../assets/galaxy.svg';
 import galaxyForSmallScreenImage from '../assets/galaxy-for-mobile.svg';
-// hello
 
 
 const SignInSection = () => {
@@ -105,9 +105,9 @@ const SignInSection = () => {
 
                                 <p className="text-center text-gray-400">
                                     Don't have an account?{' '}
-                                    <button type="button" className="text-yellow-500">
+                                    <Link to="/sign-up" className="text-yellow-500">
                                         Sign up
-                                    </button>
+                                    </Link>
                                 </p>
                             </div>
                         </div>
@@ -205,9 +205,9 @@ const SignInSection = () => {
 
                                 <p className="text-center text-gray-400 text-sm">
                                     Don't have an account?{' '}
-                                    <a href={"/sign-up"} className="text-yellow-500">
+                                    <Link to="/sign-up" className="text-yellow-500">
                                         Sign up
-                                    </a>
+                                    </Link>
                                 </p>
                             </div>
                         </div>

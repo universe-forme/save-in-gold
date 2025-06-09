@@ -43,7 +43,7 @@
 }
 
 .btn-login {
-  @apply bg-[#DFB94A] text-white px-4 py-2 rounded-lg font-medium hover:bg-yellow-700 transition-colors;
+  @apply bg-[#DFB94A] text-white px-4 py-2 rounded-lg font-medium hover:bg-yellow-700 hover:no-underline transition-colors no-underline;
 }
 
 .menu-toggle {
@@ -67,7 +67,7 @@
 }
 
 .btn-login-mobile {
-  @apply bg-yellow-600 text-white px-4 py-2 rounded-lg font-medium;
+  @apply bg-yellow-600 text-white px-4 py-2 rounded-lg font-medium hover:no-underline;
 }
 
 /* Hero Section */

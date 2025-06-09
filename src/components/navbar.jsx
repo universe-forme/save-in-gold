@@ -89,7 +89,7 @@ const Navbar = () => {
                         <div className="mobile-actions">
                             {/* Consider making these Link components if they navigate */}
                             <button className="btn-contact w-full">Contact Us</button>
-                            <a href={"/sign-in"} className="btn-login-mobile w-full">Log In</a>
+                            <a href={"/sign-in"} className="btn-login-mobile w-full text-center">Log In</a>
                         </div>
                     </div>
                 </div>
