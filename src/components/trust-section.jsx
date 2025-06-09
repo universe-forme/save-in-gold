@@ -12,6 +12,7 @@ const prices = {
     '21K': 356.25,
     '18K': 306.25,
 };
+import clsx from 'clsx';
 
 const TrustSection = () => {
     const [weight, setWeight] = useState(10);
@@ -93,6 +94,7 @@ const TrustSection = () => {
                 </div>
 
                 {/* Why Invest Section */}
+                {/* Why Invest Section */}
                 <div>
                     <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 lg:mb-16">
                         Why Invest in Gold Bars
@@ -103,26 +105,30 @@ const TrustSection = () => {
                                 title: 'Hedge Against Inflation',
                                 icon: <BarChart3 className="icon" />,
                                 desc: 'Gold has historically maintained its value over time, making it a reliable hedge against inflation.',
+                                className: '',
                             },
                             {
                                 title: 'Diversify Your Portfolio',
                                 icon: <LineChart className="icon" />,
                                 desc: 'Adding gold to your investment portfolio can provide stability and reduce risk.',
+                                className: '',
                             },
                             {
                                 title: 'Tangible Asset',
                                 icon: <Landmark className="icon" />,
                                 desc: 'Unlike stocks and bonds, gold is a physical asset that you can hold and store.',
+                                className: '',
                             },
                             {
                                 title: 'High Liquidity',
                                 icon: <Banknote className="icon" />,
                                 desc: 'Gold bars are highly liquid, meaning they can be easily bought and sold in the market.',
+                                className: 'lg:col-start-2 lg:row-start-2',
                             },
-                        ].map(({ title, icon, desc }) => (
+                        ].map(({ title, icon, desc, className }) => (
                             <div
                                 key={title}
-                                className="benefit-card group"
+                                className={clsx('benefit-card group', className)}
                             >
                                 <div className="benefit-icon group-hover:scale-110 transition-transform">
                                     {icon}
@@ -133,6 +139,7 @@ const TrustSection = () => {
                         ))}
                     </div>
                 </div>
+
             </div>
         </section>
     );
