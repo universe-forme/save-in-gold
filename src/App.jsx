@@ -5,10 +5,13 @@
 
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import {Home} from "./pages/home.jsx";
+import {GoldBarCollection} from "./pages/goldbar-collection.jsx";
 import {OurApp} from "./pages/our-app.jsx";
 import {AboutUs} from "./pages/about-us.jsx";
 import {ContactUs} from "./pages/contact-us.jsx";
 import {Blog} from "./pages/blog.jsx";
+import {SignIn} from "./pages/sign-in.jsx";
+import {SignUp} from "./pages/sign-up.jsx";
 import {NotFound} from "./pages/not-found.jsx";
 
 function App() {
@@ -19,10 +22,13 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route index element={<Home />} />
+                <Route path="/goldbar-collection" element={<GoldBarCollection />} />
                 <Route path="/about-us" element={<AboutUs />} />
                 <Route path="/blogs" element={<Blog />} />
                 <Route path="/contact-us" element={<ContactUs />} />
                 <Route path="/our-app" element={<OurApp />} />
+                <Route path="/sign-in" element={<SignIn />} />
+                <Route path="/sign-up" element={<SignUp />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </BrowserRouter>
