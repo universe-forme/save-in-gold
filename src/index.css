@@ -380,3 +380,35 @@ button, input, a {
 /*    background-color: #f9f9f9;*/
 /*  }*/
 /*}*/
+@media (max-width: 425px) {
+  .hero-img {
+    height: 230px;
+    width: 350px;
+    border-radius: 40px;
+    object-fit: cover;
+  }
+
+  .hero-image-layer {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    height: 230px;
+    width: 375px;
+    border-radius: 40px;
+  }
+}
+@media (max-width: 375px) {
+  .hero-image-layer {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    height: 235px;
+    width: 325px;
+    border-radius: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-image-wrapper {
+    padding-bottom: 60px;
+  }
+}
