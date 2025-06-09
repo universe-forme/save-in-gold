@@ -1,5 +1,6 @@
 import React from 'react';
 import goldBarHeroImage from  '../assets/goldbar-collection.jpg';
+// hello
 
 const GoldbarCollectionHero = () => {
     return (

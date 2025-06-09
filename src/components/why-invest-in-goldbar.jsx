@@ -4,6 +4,7 @@ import { Check, Star, ChevronRight, ChevronLeft } from 'lucide-react';
 import goldBar1 from '../assets/gold-bars-1.jpg';
 import goldBar2 from '../assets/gold-bars-2.jpg';
 import goldBar3 from '../assets/gold-bars-3.jpg';
+// hello
 
 const WhyInvestInGoldBars = () => {
     const goldBars = [

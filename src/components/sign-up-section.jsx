@@ -3,6 +3,7 @@ import { Mail, Lock, User } from 'lucide-react';
 
 import galaxyForBigScreenImage from '../assets/galaxy.svg';
 import galaxyForSmallScreenImage from '../assets/galaxy-for-mobile.svg';
+// hello
 
 const SignUp = () => {
     const [fullName, setFullName] = useState('');
