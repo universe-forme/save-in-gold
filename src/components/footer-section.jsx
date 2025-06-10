@@ -68,7 +68,7 @@ const FooterSection = () => {
 
                     <div className="lg:col-span-1">
                         <h3 className="text-white font-semibold text-lg mb-4">AVAILABLE ON:</h3>
-                        <div className="space-y-3">
+                        <div className="space-y-3 store-links">
                             <a
                                 href="#"
                                 className="flex items-center bg-[#43484C] hover:bg-gray-700 rounded-lg p-3 transition-colors duration-200"

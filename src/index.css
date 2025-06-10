@@ -431,6 +431,9 @@ button, input, a {
 ul li a:hover {
   text-decoration:  none;
 }
+.store-links a:hover{
+  text-decoration: none;
+}
 
 /*hello*/
 /*@media (max-width: 1024px) {*/
