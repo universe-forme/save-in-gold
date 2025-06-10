@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import blogImage from "../assets/abc.png";
+import blogImage from "../assets/blog-img.png";
 
 const BlogSection = () => {
     return (
@@ -25,7 +25,7 @@ const BlogSection = () => {
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                                 <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
-                                    <button className="bg-yellow-400 text-white px-4 py-2 rounded-md">
+                                    <button className="bg-[#DFB94A] text-white px-4 py-2 rounded-md">
                                         Save in Gold News
                                     </button>
                                 </div>
@@ -43,7 +43,7 @@ const BlogSection = () => {
                                 <div className="pt-2">
                                     <a
                                         href="#"
-                                        className="text-yellow-400 text-sm font-medium hover:text-yellow-300 transition-colors flex items-center"
+                                        className="text-[#DFB94A] text-sm font-medium hover:text-yellow-300 transition-colors flex items-center blog-link"
                                     >
                                         Read More <ArrowRight className="w-4 h-4 ml-1" />
                                     </a>

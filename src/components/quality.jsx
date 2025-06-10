@@ -24,7 +24,7 @@ const QualityAndValue = () => {
                                 </p>
                             </div>
                             <div>
-                                <button className="bg-[#DFB94A] text-black px-8 py-4 rounded-lg font-semibold text-lg hover:from-yellow-500 hover:to-yellow-700 bg-gradient-to-r transition-all duration-300 transform hover:scale-105">
+                                <button className="bg-[#DFB94A] text-black px-6 py-3 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105">
                                     Buy Now
                                 </button>
                             </div>

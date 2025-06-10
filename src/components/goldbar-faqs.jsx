@@ -67,7 +67,7 @@ export default function GoldbarFaqs() {
         <section className="py-16 lg:py-20 bg-black">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-start mb-12">
-                    <h2 className="text-3xl sm:text-4xl font-bold text-yellow-400 mb-4">FAQs</h2>
+                    <h2 className="text-3xl sm:text-4xl font-bold text-[#DFB94A] mb-4">FAQs</h2>
                 </div>
                 <div className="grid md:grid-cols-2 gap-4">
                     {[0, 1].map((col) => (
@@ -75,7 +75,7 @@ export default function GoldbarFaqs() {
                             {faqs.slice(col * 5, col * 5 + 5).map((faq, index) => {
                                 const isOpen = openIndex === col * 5 + index;
                                 return (
-                                    <div key={index} className="bg-[#3a3a3a] rounded-lg border border-gray-300">
+                                    <div key={index} className="bg-[#3a3a3a] rounded-lg border border-[#757575]">
                                         <button
                                             className="w-full h-16 px-6 text-left flex justify-between items-center text-white hover:bg-[#444444] transition-colors rounded-lg"
                                             onClick={() => toggleFAQ(col * 5 + index)}

@@ -13,8 +13,8 @@ const navItems = [
     { name: 'About Us', path: '/about-us' },
     { name: 'Contact', path: '/contact-us' },
     { name: 'Blog', path: '/blogs' },
-    { name: 'Sign Up', path: '/sign-up' },
-    { name: 'Sign In', path: '/sign-in' },
+    // { name: 'Sign Up', path: '/sign-up' },
+    // { name: 'Sign In', path: '/sign-in' },
 ];
 
 const Navbar = () => {
@@ -24,8 +24,7 @@ const Navbar = () => {
         setMobileMenuOpen(!isMobileMenuOpen);
     };
 
-    // Define base and active classes for NavLink
-    const baseLinkClasses = "text-gray-300 hover:text-white transition-colors";
+    const baseLinkClasses = "text-gray-300 hover:text-white transition-colors hover:no-underline";
     const activeLinkClasses = "text-yellow-400 border-b-2 border-yellow-400"; // text-yellow-400 is rgb(250 204 21)
 
     return (
@@ -43,8 +42,6 @@ const Navbar = () => {
                         <NavLink
                             key={item.name}
                             to={item.path}
-                            // The className prop can accept a function
-                            // to conditionally apply classes based on isActive state
                             className={({ isActive }) =>
                                 cn(baseLinkClasses, isActive ? activeLinkClasses : '')
                             }
@@ -60,8 +57,8 @@ const Navbar = () => {
                         <span>EN</span>
                     </div>
                     {/* Assuming Contact Us button might navigate or open a modal. For now, a button. */}
-                    <button className="btn-contact">Contact Us</button>
-                    <a href={"/sign-in"} className="btn-login">Log In</a>
+                    {/*<button className="btn-contact">Contact Us</button>*/}
+                    {/*<a href={"/sign-in"} className="btn-login">Log In</a>*/}
                 </div>
 
                 <button className="menu-toggle md:hidden" onClick={toggleMobileMenu} aria-label="Toggle mobile menu">
@@ -79,18 +76,22 @@ const Navbar = () => {
                                 key={item.name}
                                 to={item.path}
                                 className={({ isActive }) =>
-                                    cn("mobile-link", isActive ? "text-yellow-400" : "text-gray-300")
+                                    cn(
+                                        "mobile-link", // Base class for mobile links
+                                        isActive ? "text-yellow-400" : "text-gray-300",
+                                        "hover:no-underline" // Add this to remove underline on hover
+                                    )
                                 }
                                 onClick={() => setMobileMenuOpen(false)} // Close menu on link click
                             >
                                 {item.name}
                             </NavLink>
                         ))}
-                        <div className="mobile-actions">
-                            {/* Consider making these Link components if they navigate */}
-                            <button className="btn-contact w-full">Contact Us</button>
-                            <a href={"/sign-in"} className="btn-login-mobile w-full text-center">Log In</a>
-                        </div>
+                        {/*<div className="mobile-actions">*/}
+                        {/*    /!* Consider making these Link components if they navigate *!/*/}
+                        {/*    <button className="btn-contact w-full">Contact Us</button>*/}
+                        {/*    <a href={"/sign-in"} className="btn-login-mobile w-full text-center">Log In</a>*/}
+                        {/*</div>*/}
                     </div>
                 </div>
             )}

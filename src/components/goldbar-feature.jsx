@@ -38,9 +38,9 @@ export default function GoldBarFeature() {
                     {features.map((feature, index) => (
                         <div
                             key={index}
-                            className="bg-[#272727] rounded-xl p-6 text-center hover:border-yellow-400 border border-transparent transition-all duration-300"
+                            className="bg-[#272727] rounded-xl p-6 text-center hover:border-[#DFB94A] border border-transparent transition-all duration-300"
                         >
-                            <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <div className="w-12 h-12 bg-[#DFB94A] rounded-full flex items-center justify-center mx-auto mb-4">
                                 {feature.icon}
                             </div>
                             <h3 className="text-white font-semibold text-lg mb-3">{feature.title}</h3>

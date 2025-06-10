@@ -39,11 +39,11 @@
 }
 
 .btn-contact {
-  @apply bg-yellow-400 text-black px-4 py-2 rounded-lg font-medium hover:bg-yellow-500 transition-colors;
+  @apply bg-[#DFB94A] text-black px-4 py-2 rounded-lg font-medium hover:bg-yellow-500 transition-colors;
 }
 
 .btn-login {
-  @apply bg-[#DFB94A] text-white px-4 py-2 rounded-lg font-medium hover:bg-yellow-700 hover:no-underline transition-colors no-underline;
+  @apply bg-[#DFB94A] text-black px-4 py-2 rounded-lg font-medium hover:bg-yellow-500 hover:no-underline transition-colors no-underline;
 }
 
 .menu-toggle {
@@ -88,11 +88,11 @@
 }
 
 .blur-circle-1 {
-  @apply absolute top-20 left-10 w-32 h-32 bg-yellow-400 rounded-full blur-3xl;
+  @apply absolute top-20 left-10 w-32 h-32 bg-[#DFB94A] rounded-full blur-3xl;
 }
 
 .blur-circle-2 {
-  @apply absolute bottom-20 right-10 w-48 h-48 bg-yellow-600 rounded-full blur-3xl;
+  @apply absolute bottom-20 right-10 w-48 h-48 bg-[#DFB94A] rounded-full blur-3xl;
 }
 
 .hero-content-wrapper {
@@ -104,11 +104,11 @@
 }
 
 .hero-text {
-  @apply space-y-8 text-center lg:text-left;
+  @apply space-y-9 text-center lg:text-left;
 }
 
 .hero-heading {
-  @apply text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight;
+  @apply text-4xl sm:text-4xl lg:text-6xl leading-tight;
 }
 
 .hero-description {
@@ -116,8 +116,8 @@
 }
 
 .hero-button {
-  @apply bg-gradient-to-r from-yellow-400 to-yellow-600 text-black px-8 py-4 rounded-lg font-semibold text-lg
-  hover:from-yellow-500 hover:to-yellow-700 transition-all duration-300 transform hover:scale-105;
+  @apply bg-[#DFB94A] text-black px-6 py-3 rounded-lg font-semibold text-lg
+   transition-all duration-300 transform hover:scale-105;
 }
 
 .hero-image-wrapper {
@@ -150,22 +150,22 @@
   @apply w-[420px] h-[260px] sm:w-[600px] sm:h-[340px] object-cover rounded-[40px] shadow-xl;
 }
 .input-field {
-  @apply w-full bg-[#222222] text-white px-4 py-3 rounded-lg border border-gray-600 focus:border-yellow-400 focus:outline-none text-sm sm:text-base;
+  @apply w-full bg-[#222222] text-white px-4 py-3 rounded-lg border border-gray-600 focus:border-[#DFB94A] focus:outline-none text-sm sm:text-base;
 }
 
 .select-dropdown {
-  @apply w-full sm:w-auto bg-[#222222] text-white px-4 py-3 rounded-lg border border-gray-600 focus:border-yellow-400 focus:outline-none text-sm sm:text-base;
+  @apply w-full sm:w-auto bg-[#222222] text-white px-4 py-3 rounded-lg border border-gray-600 focus:border-[#DFB94A] focus:outline-none text-sm sm:text-base;
 }
 .select-dropdown1 {
-  @apply w-full bg-[#222222] text-white px-4 py-3 rounded-lg border border-gray-600 focus:border-yellow-400 focus:outline-none text-sm sm:text-base;
+  @apply w-full bg-[#222222] text-white px-4 py-3 rounded-lg border border-gray-600 focus:border-[#DFB94A] focus:outline-none text-sm sm:text-base;
 }
 
 .benefit-card {
-  @apply bg-[#272727] rounded-2xl p-6 hover:border-yellow-400 transition-all duration-300 ease-out border border-transparent;
+  @apply bg-[#272727] rounded-2xl p-6 hover:border-[#DFB94A] transition-all duration-300 ease-out border border-transparent;
 }
 
 .benefit-icon {
-  @apply w-12 h-12 bg-yellow-400 rounded-lg flex items-center justify-center mb-4 text-black;
+  @apply w-12 h-12 bg-[#DFB94A] rounded-lg flex items-center justify-center mb-4 text-black;
 }
 
 .icon {
@@ -412,4 +412,41 @@ button, input, a {
     padding-bottom: 60px;
   }
 }
+@media (max-width: 1024px) {
+  .hero-image-wrapper {
+    padding-bottom: 60px;
+  }
+}
+
+.nav-links a:hover {
+  text-decoration: none;
+}
+
+.mobile-link:hover { /* If you have styles for .mobile-link */
+  text-decoration: none;
+}
+.blog-link:hover {
+  text-decoration: none;
+}
+ul li a:hover {
+  text-decoration:  none;
+}
+
 /*hello*/
+/*@media (max-width: 1024px) {*/
+/*  .hero-image-layer {*/
+/*    width: 463px;*/
+/*  }*/
+
+/*  .hero-img {*/
+/*    width: 450px;*/
+/*  }*/
+
+/*  .hero-img {*/
+/*    height: 300px;*/
+/*  }*/
+
+/*  .hero-image-layer {*/
+/*    height: 300px;*/
+/*  }*/
+/*}*/
