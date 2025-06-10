@@ -30,7 +30,7 @@ const TrustSection = () => {
                 <div className="grid lg:grid-cols-2 gap-8 mb-16 lg:mb-20">
                     <div className="bg-[#272727] rounded-2xl p-6">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6 gap-4">
-                            <h3 className="text-xl font-semibold text-yellow-400">Live Gold Price - Dubai</h3>
+                            <h3 className="text-xl font-semibold text-[#DFB94A]">Live Gold Price - Dubai</h3>
                             <select className="select-dropdown">
                                 <option>Today</option>
                                 <option>Weekly</option>
@@ -60,7 +60,7 @@ const TrustSection = () => {
 
                     {/* Gold Calculator */}
                     <div className="bg-[#272727] rounded-2xl p-6">
-                        <h3 className="text-xl font-semibold text-yellow-400 mb-6">Gold Calculator</h3>
+                        <h3 className="text-xl font-semibold text-[#DFB94A] mb-6">Gold Calculator</h3>
                         <div className="space-y-6">
                             <div>
                                 <label className="block text-gray-300 mb-2">Weight (grams)</label>
@@ -87,7 +87,7 @@ const TrustSection = () => {
 
                             <div className="pt-4">
                                 <div className="text-lg text-gray-300 mb-2">Total Value:</div>
-                                <div className="text-2xl font-bold text-yellow-400">{`AED ${totalValue}`}</div>
+                                <div className="text-2xl font-bold text-[#DFB94A]">{`AED ${totalValue}`}</div>
                             </div>
                         </div>
                     </div>

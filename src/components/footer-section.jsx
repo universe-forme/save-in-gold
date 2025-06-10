@@ -29,10 +29,10 @@ const FooterSection = () => {
 
                     <div className="lg:col-span-1">
                         <h3 className="text-white font-semibold text-lg mb-4">Quick Links</h3>
-                        <ul className="space-y-2">
+                        <ul className="space-y-2 list-disc list-inside">
                             {["Shop", "About Us", "Contact Us", "Blog", "Save in Gold News", "Save in Gold Application"].map((item) => (
                                 <li key={item}>
-                                    <a href="#" className="text-gray-300 hover:text-yellow-400 transition-colors duration-200">
+                                    <a href="#" className="text-gray-300 hover:text-[#DFB94A] transition-colors duration-200">
                                         {item}
                                     </a>
                                 </li>
@@ -42,10 +42,10 @@ const FooterSection = () => {
 
                     <div className="lg:col-span-1">
                         <h3 className="text-white font-semibold text-lg mb-4">GOLD INVESTMENT</h3>
-                        <ul className="space-y-2">
+                        <ul className="space-y-2 list-disc list-inside">
                             {["Trade Application", "Gold Trade Location", "Why invest In Gold", "Open Demo Account", "Open Real Account"].map((item) => (
                                 <li key={item}>
-                                    <a href="#" className="text-gray-300 hover:text-yellow-400 transition-colors duration-200">
+                                    <a href="#" className="text-gray-300 hover:text-[#DFB94A] transition-colors duration-200">
                                         {item}
                                     </a>
                                 </li>
@@ -55,10 +55,10 @@ const FooterSection = () => {
 
                     <div className="lg:col-span-1">
                         <h3 className="text-white font-semibold text-lg mb-4">PRIVACY AND TERMS</h3>
-                        <ul className="space-y-2">
+                        <ul className="space-y-2 list-disc list-inside">
                             {["Privacy Policy", "Refund Returns", "Terms & Conditions", "Shipping & Delivery Policy", "Latest News", "Our Sitemap", "Menu child item"].map((item) => (
                                 <li key={item}>
-                                    <a href="#" className="text-gray-300 hover:text-yellow-400 transition-colors duration-200">
+                                    <a href="#" className="text-gray-300 hover:text-[#DFB94A] transition-colors duration-200">
                                         {item}
                                     </a>
                                 </li>

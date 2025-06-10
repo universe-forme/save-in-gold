@@ -15,7 +15,7 @@ const GoldAppSection = () => {
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div className="space-y-8">
                             <div className="space-y-4">
-                                <p className="text-yellow-400 text-sm font-medium tracking-wide uppercase">
+                                <p className="text-[#DFB94A] text-sm font-medium tracking-wide uppercase">
                                     Get Best Gold Trade Application
                                 </p>
                                 <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-tight">
@@ -69,7 +69,7 @@ const GoldAppSection = () => {
             </section>
 
             <div className="bg-black">
-                <hr className="w-3/5 border-2 border-yellow-500 mx-auto" />
+                <hr className="w-3/5 border-2 border-[#DFB94A] mx-auto" />
             </div>
         </>
     );

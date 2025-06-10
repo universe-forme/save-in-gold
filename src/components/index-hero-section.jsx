@@ -24,7 +24,7 @@ const IndexHeroSection = () => {
                 <div className="hero-grid">
                     {/* Text Block */}
                     <div className="hero-text">
-                        <h1 className="hero-heading">
+                        <h1 className="hero-heading font-cinzel">
                             <span className="text-white">Luxury You Can</span>
                             <br />
                             <span className="text-white">Hold. Value You</span>
