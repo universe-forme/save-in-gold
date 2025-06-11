@@ -8,6 +8,7 @@ import GoldBarFeature from '../components/goldbar-feature.jsx';
 import GoldbarFaqs from '../components/goldbar-faqs.jsx';
 import Blogsection from "../components/blog-section.jsx";
 import FooterSection from "../components/footer-section.jsx";
+import HR from "../components/hr.jsx";
 
 export const Home = () => {
     return (
@@ -17,7 +18,9 @@ export const Home = () => {
             <TrustSection />
             <QualityAndValue />
             <WhyBuyUs />
+            <HR />
             <GoldAppSection />
+            <HR />
             <GoldBarFeature />
             <GoldbarFaqs />
             <Blogsection />

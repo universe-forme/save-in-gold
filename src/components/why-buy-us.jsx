@@ -3,14 +3,13 @@ import abcImage from "../assets/abc.png";
 
 const WhyBuyUs = () => {
     return (
-        <>
             <section className="py-16 lg:py-20 bg-black">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div className="space-y-8">
                             <div className="space-y-4">
                                 <p className="text-[#DFB94A] text-sm font-medium tracking-wide uppercase">Save In Gold</p>
-                                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight font-cinzel">
+                                <h2 className="text-3xl sm:text-4xl lg:text-5xl text-white leading-tight font-cinzel">
                                     WHY BUY GOLD BARS FROM SAVE IN GOLD COMPANY?
                                 </h2>
                             </div>
@@ -75,10 +74,6 @@ const WhyBuyUs = () => {
                 </div>
             </section>
 
-            <div className="bg-black">
-                <hr className="w-3/5 border-2 border-[#DFB94A] mx-auto" />
-            </div>
-        </>
     );
 };
 

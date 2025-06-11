@@ -3,7 +3,6 @@ import { Apple, Play } from "lucide-react";
 
 const GoldAppSection = () => {
     return (
-        <>
             <section className="py-16 lg:py-20 bg-black overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
@@ -68,10 +67,6 @@ const GoldAppSection = () => {
                 </div>
             </section>
 
-            <div className="bg-black">
-                <hr className="w-3/5 border-2 border-[#DFB94A] mx-auto" />
-            </div>
-        </>
     );
 };
 
