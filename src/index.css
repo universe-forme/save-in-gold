@@ -116,7 +116,7 @@
 }
 
 .hero-button {
-  @apply bg-[#DFB94A] text-black px-6 py-3 rounded-lg font-semibold text-lg
+  @apply bg-[#DFB94A] text-white px-6 py-3 rounded-2xl font-semibold text-lg
    transition-all duration-300 transform hover:scale-105;
 }
 
@@ -192,7 +192,7 @@
 }
 
 .star-icon {
-  color: #fbbf24;
+  color: #DFB94A;
 }
 
 .content-section {
@@ -417,12 +417,16 @@ button, input, a {
     padding-bottom: 60px;
   }
 }
-
+@media (max-width: 425px) {
+.small-srn {
+  padding: 20px;
+  }
+}
 .nav-links a:hover {
   text-decoration: none;
 }
 
-.mobile-link:hover { /* If you have styles for .mobile-link */
+.mobile-link:hover {
   text-decoration: none;
 }
 .blog-link:hover {

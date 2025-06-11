@@ -12,7 +12,7 @@ const OurAppHero = () => {
             <div
                 className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-screen flex items-center justify-center">
                 <div className="items-center">
-                    <div className="text-center">
+                    <div className="text-center my-5">
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-cinzel text-white leading-tight">
                             SAVE IN GOLD APPLICATION
                         </h1>
@@ -20,9 +20,12 @@ const OurAppHero = () => {
                         <p className="text-lg text-gray-300 mx-auto mt-6 font-cinzel">
                             We're not just a platform, we're a community. Whether you're new to precious metals or a
                             seasoned investor, <br/> Save in Gold is your trusted partner in securing a
-                            brighter, <br/> more
+                            brighter, more
                             stable financial future.
                         </p>
+                    </div>
+                    <div className="text-center">
+                        <button className="hero-button">Download Now</button>
                     </div>
                 </div>
             </div>

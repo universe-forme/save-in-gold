@@ -93,7 +93,7 @@ const WhyInvestInGoldBars = () => {
                 <h2 className="text-xl lg:text-2xl font-bold mb-3 text-white">{goldBar.title}</h2>
 
                 <div className="flex items-center mb-4">
-                    <span className="text-yellow-400 text-sm">In Stock</span>
+                    <span className="text-[#DFB94A] text-sm">In Stock</span>
                     <Check className="w-4 h-4 ml-2 text-green-500" />
                 </div>
 
@@ -119,7 +119,7 @@ const WhyInvestInGoldBars = () => {
                 <div className="mb-4 flex justify-end">
                     <a
                         href="#"
-                        className="text-yellow-400 hover:text-yellow-300 transition-colors duration-200 flex items-center"
+                        className="text-[#DFB94A] hover:text-yellow-300 transition-colors duration-200 flex items-center"
                     >
                         Read More
                         <ChevronRight className="w-4 h-4 ml-2" />
@@ -140,7 +140,7 @@ const WhyInvestInGoldBars = () => {
                     Why Invest in Gold Bars
                 </h1>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 lg:p-10 md:p-12 small-srn">
                     {goldBars.map((goldBar) => (
                         <GoldBarCard key={goldBar.id} goldBar={goldBar} />
                     ))}
@@ -150,21 +150,21 @@ const WhyInvestInGoldBars = () => {
                 <div className="flex justify-center items-center space-x-6 mt-10">
                     <button
                         aria-label="Previous page"
-                        className="w-12 h-12 flex items-center justify-center rounded-xl border-2 border-gold-400 text-gold-400 bg-transparent hover:bg-gold-400 hover:text-black transition-colors duration-200">
+                        className="w-12 h-12 flex items-center justify-center rounded-xl border-2 border-[#DFB94A] text-[#DFB94A] bg-transparent hover:bg-gold-400 hover:text-black transition-colors duration-200">
                         <ChevronLeft className="w-6 h-6" />
                     </button>
 
                     <div className="flex items-center space-x-3 sm:space-x-6 text-xl">
-                        <span className="text-gold-400 font-semibold cursor-pointer">1</span>
-                        <span className="text-gray-200 hover:text-gold-400 cursor-pointer">2</span>
-                        <span className="text-gray-200 hover:text-gold-400 cursor-pointer">3</span>
+                        <span className="text-[#DFB94A] font-semibold cursor-pointer">1</span>
+                        <span className="text-gray-200 hover:text-[#DFB94A] cursor-pointer">2</span>
+                        <span className="text-gray-200 hover:text-[#DFB94A] cursor-pointer">3</span>
                         <span className="text-gray-400 hidden sm:inline">...</span>
-                        <span className="text-gray-200 hover:text-gold-400 cursor-pointer">32</span>
+                        <span className="text-gray-200 hover:text-[#DFB94A] cursor-pointer">32</span>
                     </div>
 
                     <button
                         aria-label="Next page"
-                        className="w-12 h-12 flex items-center justify-center rounded-xl bg-gold-400 text-black hover:bg-gold-500 transition-colors duration-200">
+                        className="w-12 h-12 flex items-center justify-center rounded-xl border-2 border-[#DFB94A] text-[#DFB94A] bg-transparent hover:bg-gold-400 hover:text-black transition-colors duration-200">
                         <ChevronRight className="w-6 h-6" />
                     </button>
                 </div>

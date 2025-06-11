@@ -1,6 +1,6 @@
 // components/Navbar.jsx
-import React, { useState } from 'react';
-import { NavLink, Link } from 'react-router-dom'; // Import NavLink and Link
+import React, { useState, useEffect, useRef } from 'react'; // Added useEffect and useRef
+import { NavLink, Link } from 'react-router-dom';
 import { cn } from '../lib/utils';
 
 import logo from '../assets/logo.png';
@@ -8,30 +8,55 @@ import { Globe } from "lucide-react";
 
 const navItems = [
     { name: 'Home', path: '/' },
-    { name: 'Gold Bar Collection', path: '/goldbar-collection' }, // Example path
+    { name: 'Gold Bar Collection', path: '/goldbar-collection' },
     { name: 'Our App', path: '/our-app' },
     { name: 'About Us', path: '/about-us' },
     { name: 'Contact', path: '/contact-us' },
     { name: 'Blog', path: '/blogs' },
-    // { name: 'Sign Up', path: '/sign-up' },
-    // { name: 'Sign In', path: '/sign-in' },
 ];
 
 const Navbar = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const menuRef = useRef(null); // Ref for the mobile menu
+    const toggleButtonRef = useRef(null); // Ref for the toggle button
 
     const toggleMobileMenu = () => {
         setMobileMenuOpen(!isMobileMenuOpen);
     };
 
+    // Close menu when clicking outside
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            // If menu is open, menuRef exists, click is not on the menu, and not on the toggle button
+            if (
+                isMobileMenuOpen &&
+                menuRef.current &&
+                !menuRef.current.contains(event.target) &&
+                toggleButtonRef.current &&
+                !toggleButtonRef.current.contains(event.target)
+            ) {
+                setMobileMenuOpen(false);
+            }
+        };
+
+        if (isMobileMenuOpen) {
+            document.addEventListener('mousedown', handleClickOutside);
+        } else {
+            document.removeEventListener('mousedown', handleClickOutside);
+        }
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [isMobileMenuOpen]); // Re-run effect when isMobileMenuOpen changes
+
     const baseLinkClasses = "text-gray-300 hover:text-white transition-colors hover:no-underline";
-    const activeLinkClasses = "text-yellow-400 border-b-2 border-yellow-400"; // text-yellow-400 is rgb(250 204 21)
+    const activeLinkClasses = "text-yellow-400 border-b-2 border-yellow-400";
 
     return (
-        <nav className="navbar">
+        <nav className="navbar relative"> {/* Added relative positioning for absolute child */}
             <div className="navbar-container">
                 <div className="logo-container">
-                    {/* Make logo a link to home */}
                     <Link to="/" className="logo-box">
                         <img src={logo} alt="Save Gold Logo" className="w-full h-full object-contain" />
                     </Link>
@@ -53,15 +78,18 @@ const Navbar = () => {
 
                 <div className="action-buttons hidden md:flex">
                     <div className="lang-select">
-                        <span><Globe size={20} /></span> {/* Adjusted size for better fit */}
+                        <span><Globe size={20} /></span>
                         <span>EN</span>
                     </div>
-                    {/* Assuming Contact Us button might navigate or open a modal. For now, a button. */}
-                    {/*<button className="btn-contact">Contact Us</button>*/}
-                    {/*<a href={"/sign-in"} className="btn-login">Log In</a>*/}
                 </div>
 
-                <button className="menu-toggle md:hidden" onClick={toggleMobileMenu} aria-label="Toggle mobile menu">
+                <button
+                    ref={toggleButtonRef} // Assign ref to the toggle button
+                    className="menu-toggle md:hidden"
+                    onClick={toggleMobileMenu}
+                    aria-label="Toggle mobile menu"
+                    aria-expanded={isMobileMenuOpen} // For accessibility
+                >
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
@@ -69,29 +97,27 @@ const Navbar = () => {
             </div>
 
             {isMobileMenuOpen && (
-                <div className="mobile-menu md:hidden">
-                    <div className="mobile-links">
+                <div
+                    ref={menuRef} // Assign ref to the mobile menu
+                    className="mobile-menu md:hidden absolute top-full left-0 right-0 bg-black z-50 shadow-lg" // Added absolute positioning and styling
+                >
+                    <div className="mobile-links px-4 py-2"> {/* Added some padding */}
                         {navItems.map((item) => (
                             <NavLink
                                 key={item.name}
                                 to={item.path}
                                 className={({ isActive }) =>
                                     cn(
-                                        "mobile-link", // Base class for mobile links
+                                        "mobile-link block py-2", // Base class for mobile links, added block and py-2
                                         isActive ? "text-yellow-400" : "text-gray-300",
-                                        "hover:no-underline" // Add this to remove underline on hover
+                                        "hover:no-underline hover:text-white" // Ensure hover styles
                                     )
                                 }
-                                onClick={() => setMobileMenuOpen(false)} // Close menu on link click
+                                onClick={() => setMobileMenuOpen(false)}
                             >
                                 {item.name}
                             </NavLink>
                         ))}
-                        {/*<div className="mobile-actions">*/}
-                        {/*    /!* Consider making these Link components if they navigate *!/*/}
-                        {/*    <button className="btn-contact w-full">Contact Us</button>*/}
-                        {/*    <a href={"/sign-in"} className="btn-login-mobile w-full text-center">Log In</a>*/}
-                        {/*</div>*/}
                     </div>
                 </div>
             )}
