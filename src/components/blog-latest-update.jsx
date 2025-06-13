@@ -1,6 +1,6 @@
 // src/components/BlogLatestUpdate.jsx
 import React from "react";
-import blogImg from "@/assets/abc.png";
+import blogImg from "../assets/blog-img.png";
 import { ArrowRight } from "lucide-react";
 
 const BlogCard = () => (
@@ -9,7 +9,7 @@ const BlogCard = () => (
             <img src={blogImg} alt="Blog" className="w-full h-[300px] object-cover object-center" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2">
-                <button className="bg-yellow-400 text-white px-4 py-2 rounded-md text-sm font-medium">Save in Gold News</button>
+                <button className="bg-[#DFB94A] text-white px-4 py-2 rounded-md text-sm font-medium">Save in Gold News</button>
             </div>
         </div>
 
@@ -23,7 +23,7 @@ const BlogCard = () => (
             </p>
 
             <div className="pt-2 flex justify-between items-center">
-                <a href="#" className="text-yellow-400 text-sm font-medium hover:text-yellow-300 flex items-center gap-1">
+                <a href="#" className="text-[#DFB94A] text-sm font-medium hover:text-yellow-300 flex items-center gap-1">
                     Read More <ArrowRight className="w-4 h-4" />
                 </a>
                 <span className="text-gray-400 text-xs">18-04-2025</span>
@@ -38,10 +38,10 @@ const BlogCard = () => (
 
 const BlogLatestUpdate = () => {
     return (
-        <section className="py-16 lg:py-20 bg-black">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-16 lg:py-20 bg-black font-montserrat">
+            <div className="max-w-7xl mx-auto px-4 blog-card-padding">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Latest Updates</h2>
+                    <h2 className="text-3xl sm:text-4xl font-medium text-white mb-4">Latest Updates</h2>
                 </div>
 
                 <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">

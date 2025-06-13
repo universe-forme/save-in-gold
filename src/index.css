@@ -4,10 +4,17 @@
 /* index.css */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 .font-cinzel {
   font-family: 'Cinzel', serif;
 }
-
+.font-montserrat {
+  font-family: 'montserrat', serif;
+}
+a:hover {
+  text-decoration: none !important;
+}
 
 /* index.css */
 .navbar {
@@ -311,6 +318,29 @@ button, input, a {
     opacity: 0.8;
   }
 }
+@media (max-width: 768px) {
+  .blog-card-padding, .faqs-padding {
+    padding: 0 48px 0 48px !important;
+  }
+  .contact-padding {
+    padding: 0 32px 0 32px !important;
+  }
+  .cal-and-why-us-padding {
+    padding: 0 48px 0 48px !important;
+  }
+  .quality-value-padding {
+    padding: 30px 48px 0 48px !important;
+  }
+  .why-bus-us-padding {
+    padding: 30px 48px 0 48px !important;
+  }
+  .save-in-gold-padding {
+    padding: 0 48px 0 48px !important;
+  }
+  .feature-padding {
+    padding: 0 48px 0 48px !important
+  }
+}
 
 /*:root {*/
 /*  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;*/
@@ -422,22 +452,22 @@ button, input, a {
   padding: 20px;
   }
 }
-.nav-links a:hover {
-  text-decoration: none;
-}
+/*.nav-links a:hover {*/
+/*  text-decoration: none;*/
+/*}*/
 
-.mobile-link:hover {
-  text-decoration: none;
-}
-.blog-link:hover {
-  text-decoration: none;
-}
-ul li a:hover {
-  text-decoration:  none;
-}
-.store-links a:hover{
-  text-decoration: none;
-}
+/*.mobile-link:hover {*/
+/*  text-decoration: none;*/
+/*}*/
+/*.blog-link:hover {*/
+/*  text-decoration: none;*/
+/*}*/
+/*ul li a:hover {*/
+/*  text-decoration:  none;*/
+/*}*/
+/*.store-links a:hover{*/
+/*  text-decoration: none;*/
+/*}*/
 
 /*hello*/
 /*@media (max-width: 1024px) {*/

@@ -12,9 +12,9 @@ const BlogHero = () => {
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-cinzel text-white leading-tight">
                         BLOGS
                     </h1>
-                    <p className="text-lg text-gray-300 mt-6 font-cinzel">
+                    <p className="text-lg text-white mt-6 font-montserrat font-normal sm:px-8">
                         From market updates to long-term wealth planning, our blog delivers trusted insights into the
-                        world of gold <br /> investment — helping you stay ahead in an ever-changing financial landscape.
+                        world of gold investment — helping you stay ahead in an ever-changing financial landscape.
                     </p>
                 </div>
             </div>

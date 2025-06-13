@@ -14,7 +14,7 @@ const QualityAndValue = () => {
                                 style={{ minHeight: "340px", maxHeight: "500px" }}
                             />
                         </div>
-                        <div className="flex flex-col justify-center px-8 py-12 space-y-8 h-full min-h-[340px] max-h-[500px]">
+                        <div className="flex flex-col justify-center px-8 py-12 space-y-8 h-full min-h-[340px] max-h-[500px] quality-value-padding">
                             <div>
                                 <h2 className="text-3xl sm:text-4xl lg:text-5xl text-white leading-tight font-cinzel">
                                     Trusted Source For Premium Gold Bars Offering Quality & Value
