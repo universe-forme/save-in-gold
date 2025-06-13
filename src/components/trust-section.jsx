@@ -26,7 +26,7 @@ const TrustSection = () => {
 
     return (
         <section className="py-16 lg:py-20 bg-black text-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto px-4 cal-and-why-us-padding">
                 <div className="grid lg:grid-cols-2 gap-8 mb-16 lg:mb-20">
                     <div className="bg-[#272727] rounded-2xl p-6">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6 gap-4">

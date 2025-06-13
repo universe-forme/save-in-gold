@@ -65,7 +65,7 @@ export default function GoldbarFaqs() {
 
     return (
         <section className="py-16 lg:py-20 bg-black">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto px-4 faqs-padding">
                 <div className="text-start mb-12">
                     <h2 className="text-3xl sm:text-4xl font-bold text-[#DFB94A] mb-4">FAQs</h2>
                 </div>

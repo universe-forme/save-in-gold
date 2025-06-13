@@ -61,7 +61,7 @@ const faqData = [
 ];
 
 const FAQItem = ({ faq, isOpen, onClick }) => (
-    <div className="bg-[#3a3a3a] rounded-lg border border-gray-300">
+    <div className="bg-[#272727] rounded-lg  border border-[#757575] font-normal">
         <button
             onClick={onClick}
             className="w-full h-16 px-6 text-left flex justify-between items-center text-white hover:bg-[#444444] transition-colors rounded-lg"
@@ -93,9 +93,9 @@ const ContactUsFaqs = () => {
 
     return (
         <section className="py-16 lg:py-20 bg-black">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto px-4 font-montserrat faqs-padding">
                 <div className="text-start mb-12">
-                    <h2 className="text-3xl sm:text-4xl text-center mb-4 text-white">
+                    <h2 className="text-3xl sm:text-4xl text-center mb-4 text-white font-medium">
                         Frequently Asked Question
                     </h2>
                 </div>
