@@ -1,5 +1,5 @@
 import Navbar from "@/components/navbar.jsx";
-import NotFoundSection from "@/components/not-found.jsx";
+import NotFoundSection from "@/components/not-found-section.jsx";
 import FooterSection from "@/components/footer-section.jsx";
 
 

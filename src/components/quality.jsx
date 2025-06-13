@@ -1,14 +1,13 @@
-import abcImage from "../assets/abc.png";
+import qaulitySectionImg from "../assets/quality-section-img.jpg";
 
 const QualityAndValue = () => {
     return (
-        <>
             <section className="py-20 bg-[#272727]">
                 <div className="max-w-full mx-0 px-0">
                     <div className="grid lg:grid-cols-2 gap-0 items-stretch">
                         <div className="w-full h-full">
                             <img
-                                src={abcImage}
+                                src={qaulitySectionImg}
                                 alt="Gold Bars"
                                 className="w-full h-full object-cover rounded-none"
                                 style={{ minHeight: "340px", maxHeight: "500px" }}
@@ -24,7 +23,7 @@ const QualityAndValue = () => {
                                 </p>
                             </div>
                             <div>
-                                <button className="bg-[#DFB94A] text-black px-6 py-3 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105">
+                                <button className="bg-[#DFB94A] text-white px-6 py-3 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105">
                                     Buy Now
                                 </button>
                             </div>
@@ -32,7 +31,6 @@ const QualityAndValue = () => {
                     </div>
                 </div>
             </section>
-        </>
     );
 };
 

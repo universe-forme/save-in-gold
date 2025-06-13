@@ -4,7 +4,7 @@ import { Check, Star, ChevronRight, ChevronLeft } from 'lucide-react';
 import goldBar1 from '../assets/gold-bars-1.jpg';
 import goldBar2 from '../assets/gold-bars-2.jpg';
 import goldBar3 from '../assets/gold-bars-3.jpg';
-// hello
+
 
 const WhyInvestInGoldBars = () => {
     const goldBars = [
@@ -90,7 +90,7 @@ const WhyInvestInGoldBars = () => {
             </div>
 
             <div className="content-section flex flex-col flex-grow">
-                <h2 className="text-xl lg:text-2xl font-bold mb-3 text-white">{goldBar.title}</h2>
+                <h2 className="text-xl lg:text-2xl font-medium mb-3 text-white">{goldBar.title}</h2>
 
                 <div className="flex items-center mb-4">
                     <span className="text-[#DFB94A] text-sm">In Stock</span>
@@ -126,7 +126,7 @@ const WhyInvestInGoldBars = () => {
                     </a>
                 </div>
 
-                <div className="text-gray-500 text-center text-sm mt-auto">
+                <div className="text-[#757575] text-center text-sm mt-auto">
                     Save in Gold Bar
                 </div>
             </div>
@@ -134,9 +134,9 @@ const WhyInvestInGoldBars = () => {
     );
 
     return (
-        <section className="bg-black py-12"> {/* Apply bg-black here for full width */}
-            <div className="container mx-auto px-4"> {/* Container for content centering */}
-                <h1 className="text-2xl md:text-4xl lg:text-5xl text-center mb-12 text-white font-cinzel">
+        <section className="bg-black py-12">
+            <div className="container mx-auto px-4 font-montserrat">
+                <h1 className="text-2xl md:text-4xl lg:text-5xl text-center mt-12 mb-12 text-white">
                     Why Invest in Gold Bars
                 </h1>
 
@@ -156,10 +156,10 @@ const WhyInvestInGoldBars = () => {
 
                     <div className="flex items-center space-x-3 sm:space-x-6 text-xl">
                         <span className="text-[#DFB94A] font-semibold cursor-pointer">1</span>
-                        <span className="text-gray-200 hover:text-[#DFB94A] cursor-pointer">2</span>
-                        <span className="text-gray-200 hover:text-[#DFB94A] cursor-pointer">3</span>
-                        <span className="text-gray-400 hidden sm:inline">...</span>
-                        <span className="text-gray-200 hover:text-[#DFB94A] cursor-pointer">32</span>
+                        <span className="text-white hover:text-[#DFB94A] cursor-pointer">2</span>
+                        <span className="text-white hover:text-[#DFB94A] cursor-pointer">3</span>
+                        <span className="text-white hidden sm:inline">...</span>
+                        <span className="text-white hover:text-[#DFB94A] cursor-pointer">32</span>
                     </div>
 
                     <button

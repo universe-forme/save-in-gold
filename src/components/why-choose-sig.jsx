@@ -3,7 +3,7 @@ import React from "react";
 const  WhyChooseSig = () => {
     return (
         <section className="py-16 lg:py-20 bg-black">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto px-4 why-choose-sig-padding">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Why Choose Save In Gold?</h2>
                 </div>
