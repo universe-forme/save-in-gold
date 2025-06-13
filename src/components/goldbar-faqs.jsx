@@ -75,20 +75,22 @@ export default function GoldbarFaqs() {
                             {faqs.slice(col * 5, col * 5 + 5).map((faq, index) => {
                                 const isOpen = openIndex === col * 5 + index;
                                 return (
-                                    <div key={index} className="bg-[#3a3a3a] rounded-lg border border-[#757575]">
+                                    <div key={index} className="bg-[#3a3a3a] rounded-lg border border-[#757575] min-h-[4rem]">
                                         <button
-                                            className="w-full h-16 px-6 text-left flex justify-between items-center text-white hover:bg-[#444444] transition-colors rounded-lg"
                                             onClick={() => toggleFAQ(col * 5 + index)}
+                                            className="w-full min-h-[4rem] px-4 sm:px-6 py-2 text-left flex justify-between items-start sm:items-center text-white hover:bg-[#444444] transition-colors rounded-lg"
                                         >
-                                            <span className="font-medium">{faq.question}</span>
+                                            <span className="font-medium text-sm sm:text-base leading-snug break-words w-[90%]">
+                                                {faq.question}
+                                            </span>
                                             <ChevronDown
-                                                className={`transition-transform ${
+                                                className={`w-5 h-5 flex-shrink-0 transition-transform ${
                                                     isOpen ? 'rotate-180' : 'rotate-0'
                                                 }`}
                                             />
                                         </button>
                                         {isOpen && (
-                                            <div className="px-6 pb-4">
+                                            <div className="px-4 sm:px-6 pb-4">
                                                 <p className="text-gray-300 text-sm">{faq.answer}</p>
                                             </div>
                                         )}

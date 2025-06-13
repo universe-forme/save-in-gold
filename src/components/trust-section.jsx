@@ -94,7 +94,6 @@ const TrustSection = () => {
                 </div>
 
                 {/* Why Invest Section */}
-                {/* Why Invest Section */}
                 <div>
                     <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 lg:mb-16">
                         Why Invest in Gold Bars

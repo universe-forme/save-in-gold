@@ -338,7 +338,37 @@ button, input, a {
     padding: 0 48px 0 48px !important;
   }
   .feature-padding {
+    padding: 0 48px 0 48px !important;
+  }
+  .why-choose-sig-padding {
+    padding: 0 48px 0 48px !important;
+  }
+}
+
+@media (max-width: 1300px) {
+  .blog-card-padding, .faqs-padding {
+    padding: 0 48px 0 48px !important;
+  }
+  .contact-padding {
+    padding: 0 32px 0 32px !important;
+  }
+  .cal-and-why-us-padding {
+    padding: 0 48px 0 48px !important;
+  }
+  .quality-value-padding {
+    padding: 30px 48px 0 48px !important;
+  }
+  .why-bus-us-padding {
+    padding: 30px 48px 0 48px !important;
+  }
+  .save-in-gold-padding {
+    padding: 0 48px 0 48px !important;
+  }
+  .feature-padding {
     padding: 0 48px 0 48px !important
+  }
+  .why-choose-sig-padding {
+    padding: 0 48px 0 48px !important;
   }
 }
 
@@ -430,7 +460,7 @@ button, input, a {
 @media (max-width: 375px) {
   .hero-image-layer {
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 10px;
     height: 235px;
     width: 325px;
@@ -450,6 +480,9 @@ button, input, a {
 @media (max-width: 425px) {
 .small-srn {
   padding: 20px;
+  }
+  .quality-value-padding {
+    margin-top: 20px;
   }
 }
 /*.nav-links a:hover {*/

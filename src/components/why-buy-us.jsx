@@ -1,5 +1,7 @@
 import { ShieldCheck, BadgeCheck, Layers3, DollarSign } from "lucide-react";
-import abcImage from "../assets/abc.png";
+import abcImage from "../assets/200g-goldbar.jpg";
+import buildingImg from "../assets/building.jpg";
+import tallBuildingImg from "../assets/tall-building.jpg";
 
 const WhyBuyUs = () => {
     return (
@@ -16,8 +18,7 @@ const WhyBuyUs = () => {
 
                             <div className="grid sm:grid-cols-2 gap-6">
                                 <div className="space-y-3">
-                                    <div className="flex items-center gap-2 text-[#DFB94A]">
-                                        <ShieldCheck size={20} />
+                                    <div className="flex items-center text-[#DFB94A]">
                                         <h3 className="font-semibold text-lg">Highest Purity</h3>
                                     </div>
                                     <p className="text-gray-300 text-sm leading-relaxed">
@@ -26,8 +27,7 @@ const WhyBuyUs = () => {
                                 </div>
 
                                 <div className="space-y-3">
-                                    <div className="flex items-center gap-2 text-[#DFB94A]">
-                                        <BadgeCheck size={20} />
+                                    <div className="flex items-center text-[#DFB94A]">
                                         <h3 className="font-semibold text-lg">Certified and Hallmarked</h3>
                                     </div>
                                     <p className="text-gray-300 text-sm leading-relaxed">
@@ -36,8 +36,7 @@ const WhyBuyUs = () => {
                                 </div>
 
                                 <div className="space-y-3">
-                                    <div className="flex items-center gap-2 text-[#DFB94A]">
-                                        <Layers3 size={20} />
+                                    <div className="flex items-center text-[#DFB94A]">
                                         <h3 className="font-semibold text-lg">Variety of Sizes</h3>
                                     </div>
                                     <p className="text-gray-300 text-sm leading-relaxed">
@@ -46,8 +45,7 @@ const WhyBuyUs = () => {
                                 </div>
 
                                 <div className="space-y-3">
-                                    <div className="flex items-center gap-2 text-[#DFB94A]">
-                                        <DollarSign size={20} />
+                                    <div className="flex items-center text-[#DFB94A]">
                                         <h3 className="font-semibold text-lg">Competitive Pricing</h3>
                                     </div>
                                     <p className="text-gray-300 text-sm leading-relaxed">
@@ -60,13 +58,13 @@ const WhyBuyUs = () => {
                         <div className="max-w-4xl mx-auto">
                             <div className="grid grid-cols-2 gap-4 h-[70vh] max-h-[800px]">
                                 <div className="col-span-2 bg-[#272727] rounded-3xl overflow-hidden">
-                                    <img src={abcImage} alt="Gold Bars" className="w-full h-[300px] object-cover rounded-3xl" />
+                                    <img src={abcImage} alt="Gold Bars" className="w-full h-full object-cover rounded-3xl" />
                                 </div>
                                 <div className="bg-[#272727] rounded-3xl overflow-hidden">
-                                    <img src={abcImage} alt="Gold Detail 1" className="w-full h-[300px] object-cover rounded-3xl" />
+                                    <img src={buildingImg} alt="Gold Detail 1" className="w-full h-full object-cover rounded-3xl" />
                                 </div>
                                 <div className="bg-[#272727] rounded-3xl overflow-hidden">
-                                    <img src={abcImage} alt="Gold Detail 2" className="w-full h-[300px] object-cover rounded-3xl" />
+                                    <img src={tallBuildingImg} alt="Gold Detail 2" className="w-full h-full object-cover rounded-3xl" />
                                 </div>
                             </div>
                         </div>
